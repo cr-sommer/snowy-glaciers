@@ -12,3 +12,11 @@ https://developers.google.com/earth-engine/guides/service_account;
 Results are exported to a Google Cloud Storage bucket:
 
 https://cloud.google.com/storage
+
+SLA processing is based on the following datasets:
+*Glacier areas from global inventory: Randolph Glacier Inventory 7.0
+*Surface reflectance products of optical satellite missions: Landsat 4-9, Sentinel-2 (depending on survey period)
+*Surface elevations of digital elevation model (DEM): NASADEM
+*Glacier surface elevation change: DEM-differencing maps of mean elevation change per year
+
+All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. Users can select glaciers to be processed by providing RGI-IDs.
