@@ -1,14 +1,16 @@
 # snowy-glaciers
 SNOWY-GLACIERS provides analysis code to retrieve time-varying snow line altitudes (SLA) on glaciers.
 
-## Output
+A detailed overview of the applied methodology and SLA results of glaciers in the European Alps are presented here: ADD-PREPRINT-DOI
+
+### Output
 ...
 
-## Project setup
+### Project setup
 The main workflow is based on the Google Earth Engine Python API. Running the code requires an Earth Engine service accout and cloud project. Detailed information on the initialization and authorization of Earth Engine and required python packages can be found here: [python-api](https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api); [Authentication](https://developers.google.com/earth-engine/guides/auth); [Service-Accounts](https://developers.google.com/earth-engine/guides/service_account)\
 Results are exported to a Google Cloud Storage bucket: [Cloud-Storage](https://cloud.google.com/storage)
 
-## Input data
+### Input data
 SLA processing is based on the following datasets:
 * Glacier areas from global inventory: Randolph Glacier Inventory 7.0 (RGI Consortium 2023)[^1]
 * Surface reflectance products of optical satellite missions: Landsat 4-9 (USGS)[^2], Sentinel-2 (ESA)[^3]
@@ -16,6 +18,12 @@ SLA processing is based on the following datasets:
 * Glacier surface elevation change: DEM-differencing maps of mean elevation change per year (Hugonnet et al. 2021)[^5]
 
 All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. Users can select glaciers to be processed by providing RGI-IDs.
+
+### Snow line processing
+...
+
+### Snow line trend analysis
+...
 
 
 
