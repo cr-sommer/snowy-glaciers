@@ -1,7 +1,5 @@
 # snowy-glaciers
-SNOWY-GLACIERS provides analysis code to retrieve time-varying snow line altitudes (SLA) on glaciers.
-
-A detailed overview of the applied methodology and SLA results of glaciers in the European Alps are presented here: ADD-PREPRINT-DOI
+SNOWY-GLACIERS provides analysis code to retrieve time-series of snow line altitudes (SLA) on glaciers. SLAs are measured from surface relfectance of snow and ice in the infrared and visible spectra based on medium-resolution optical remote sensing data. Automatic glacier surface classification is performed by image segmentation using Otsu`s method. The surface elevation of the transition zone between bare ice and snow (= SLA) is estimated using a digital elevation model (DEM) and a temporal correction of glacier elevation change due to surface melt. A detailed overview of the applied methodology and SLA results of glaciers in the European Alps are presented here: ADD-PREPRINT-DOI
 
 ### Output
 ...
