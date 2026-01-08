@@ -17,6 +17,6 @@ SLA processing is based on the following datasets:
 All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. Users can select glaciers to be processed by providing RGI-IDs.
 
 ### Dataset citations
-Hugonnet, R., McNabb, R., Berthier, E., Menounos, B., Nuth, C., Girod, L., Farinotti, D., Huss, M., Dussaillant, I., Brun, F., Kääb, A. (2021). Accelerated global glacier mass loss in the early twenty-first century. Nature 592, 726–731. [DOI](https://doi.org/10.1038/s41586-021-03436-z)\
+Hugonnet, R., McNabb, R., Berthier, E., Menounos, B., Nuth, C., Girod, L., Farinotti, D., Huss, M., Dussaillant, I., Brun, F., Kääb, A. (2021). Accelerated global glacier mass loss in the early twenty-first century. Nature 592, 726–731. [DOI](https://doi.org/10.1038/s41586-021-03436-z).\
 RGI Consortium, (2023). Randolph Glacier Inventory - A Dataset of Global Glacier Outlines, Version 7 [Data Set]. Boulder,
 Colorado USA. National Snow and Ice Data Center. [DOI](https://doi.org/10.5067/F6JMOVY5NAVZ). Date Accessed 01-04-2024.\
