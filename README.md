@@ -10,8 +10,13 @@ Results are exported to a Google Cloud Storage bucket: [Cloud-Storage](https://c
 
 ## Input data
 SLA processing is based on the following datasets:
-* Glacier areas from global inventory: Randolph Glacier Inventory 7.0
+* Glacier areas from global inventory: Randolph Glacier Inventory 7.0 (RGI Consortium 2023)
 * Surface reflectance products of optical satellite missions: Landsat 4-9, Sentinel-2 (depending on survey period)
 * Surface elevations of digital elevation model (DEM): NASADEM
-* Glacier surface elevation change: DEM-differencing maps of mean elevation change per year
+* Glacier surface elevation change: DEM-differencing maps of mean elevation change per year (Hugonnet et al. 2021)
 All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. Users can select glaciers to be processed by providing RGI-IDs.
+
+### Dataset citations
+Hugonnet, R., McNabb, R., Berthier, E. et al. Accelerated global glacier mass loss in the early twenty-first century. Nature 592, 726–731 (2021). [DOI](https://doi.org/10.1038/s41586-021-03436-z)\
+RGI Consortium, (2023). Randolph Glacier Inventory - A Dataset of Global Glacier Outlines, Version 7 [Data Set]. Boulder,
+Colorado USA. National Snow and Ice Data Center. [DOI](https://doi.org/10.5067/F6JMOVY5NAVZ). Date Accessed 01-04-2024.\
