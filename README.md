@@ -1,6 +1,8 @@
 # snowy-glaciers
-SNOWY-GLACIERS provides analysis code to retrieve time-varying snow line altitudes (SLA) on glaciers. 
+SNOWY-GLACIERS provides analysis code to retrieve time-varying snow line altitudes (SLA) on glaciers.
 
+# Output
+...
 
 # Project setup
 The main workflow is based on the Google Earth Engine Python API. Running the code requires an Earth Engine service accout and cloud project. Detailed information on the initialization and authorization of Earth Engine and required python packages can be found here:
