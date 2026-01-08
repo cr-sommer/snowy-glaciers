@@ -5,5 +5,6 @@ The main workflow is based on the Google Earth Engine Python API. Running the co
 https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api
 https://developers.google.com/earth-engine/guides/auth
 https://developers.google.com/earth-engine/guides/service_account
+
 Results are exported to a Google Cloud Storage bucket:
 https://cloud.google.com/storage
