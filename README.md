@@ -14,6 +14,7 @@ Results are exported to a Google Cloud Storage bucket:
 https://cloud.google.com/storage
 
 SLA processing is based on the following datasets:
+
 *Glacier areas from global inventory: Randolph Glacier Inventory 7.0
 
 *Surface reflectance products of optical satellite missions: Landsat 4-9, Sentinel-2 (depending on survey period)
