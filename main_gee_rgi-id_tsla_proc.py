@@ -32,7 +32,7 @@ import satellites
 
 ### global project variables
 print('... Initialize Earth Engine Service Account')
-project_id = 'INSERT-YOUR-CLOUD-PROJECT-NAME' # this is the main name of the project (set by USER)
+project_id = 'INSERT-YOUR-CLOUD-PROJECT-NAME-HERE' # this is the main name of the project (set by USER)
 service_account = 'INSERT-YOUR-SERVICE-ACCOUNT-HERE' # insert service account of USER (*.com)
 key_path = 'INSERT-YOUR-LOCAL-JSON-KEY-HERE' # insert earth engine json key of USER (*.json)
 print(project_id)
