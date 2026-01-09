@@ -18,7 +18,7 @@ The following datasets are used for SLA processing:
 All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. To process glaciers, users must provide glacier IDs in the format ***RGI2000-v7.0-G-99-99999*** (see "rgi_id" attribute of RGI version 7.0).
 
 >[!WARNING]
->Please note that selecting glaciers that are far apart can drastically increase the processing time. Similarly, you should avoid selecting glaciers from different regions during the same processing session. If you are interested in single glaciers that are far apart, it may be more efficient to process each glacier individually.
+>*Please note that selecting glaciers that are far apart can drastically increase the processing time. Similarly, you should avoid selecting glaciers from different regions during the same processing session. If you are interested in single glaciers that are far apart, it may be more efficient to process each glacier individually.*
 
 ## Snow line processing
 The retrieval of glacier snow lines features the following main functions:
@@ -38,9 +38,9 @@ The retrieval of glacier snow lines features the following main functions:
 All of the processing routines for the Earth Engine SLA are combined in the ***'main.py'***, ***'functions.py'*** and ***'satellites.py'*** files.
 
 >[!Note]
->In order to process snow lines in Google Earth Engine, users must adjust the processing variables in the ***'main.py'*** header. In particular, the Earth Engine service account and key must be set, as well as your cloud project name, in order to authenticate (see *Project setup* section). Further variables specify the survey period and target glaciers (see Figure 2).
+>*In order to process snow lines in Google Earth Engine, users must adjust the processing variables in the ***'main.py'*** header. In particular, the Earth Engine service account and key must be set, as well as your cloud project name, in order to authenticate (see *Project setup* section). Further variables specify the survey period and target glaciers (see Figure 2).*
 >
->The additional scripts, ***'functions.py'*** and ***'satellites.py'***, provide raster processing functions and satellite mission periods, respectively. Both are sourced by 'main.py' and do not require any user changes.
+>*The additional scripts, ***'functions.py'*** and ***'satellites.py'***, provide raster processing functions and satellite mission periods, respectively. Both are sourced by 'main.py' and do not require any user changes.*
 >
 ><img src="https://github.com/cr-sommer/snowy-glaciers/blob/main/figures/script_manual.png" width="864">
 >
