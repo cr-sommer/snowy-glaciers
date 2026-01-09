@@ -21,10 +21,24 @@ All input remote sensing datasets are accessed directly via the Earth Engine Dat
 >Please note that selecting glaciers that are far apart can drastically increase the processing time. Similarly, you should avoid selecting glaciers from different regions during the same processing session. If you are interested in single glaciers that are far apart, it may be more efficient to process each glacier individually.
 
 ### Snow line processing
-The retrival of glacier snow lines features the following main functions:
+The retrieval of glacier snow lines features the following main functions:
+* Selection of satellite images (Landsat[^3] & Sentinel-2[^4]) acquired within supplied survey period and saturation filter
+* Creation of daily mosaics of images acquired by the same sensor to avoid fragmentation of glacier areas
+* Masking of image data to glacier outlines (RGI 7.0[^2])
+* Filtering for pixels which are neither snow nor ice (e.g. clouds, rocks, debris, water, etc.)
+* Filtering for pixels which are shaded by nearby terrain (based on DEM and satellite viewing geometry)
+* Filtering for pixels with extreme low/high infrared reflectance (e.g. cloud artefacts, reflectance close to band saturation threshold)
+* Two-step image thresholding based on ratios of near-infrared (*NIR*), shortwave-infrared (*SWIR*) and *GREEN* bands (performed for each glacier and each date)
+* Creation of binary snow and ice masks, estimation of snow line elevation by masking vertically binned DEM[^5]
+* Vertical correction of SLA for changes in glacier surface elevation (using glacier surface elevation change maps[^6])
+* Export of SLA time series (one csv-table per glacier)
+* Optional - Export of raster snow masks (one multi-band Geotiff per glacier)
+
+All of the processing routines for the Earth Engine SLA are combined in the ***'main.py'***, ***'functions.py'*** and ***'satellites.py'*** files.
 
 >[!Note]
->In order to process snow lines in Google Earth Engine, users must adjust the processing variables in the ***'main.py'*** header. In particular, the Earth Engine service account and key must be set, as well as your cloud project name, in order to authenticate (see *Project setup* section). Further variables specify the survey period and target glaciers (see the beginning of 'main.py' for detailed variable descriptions). The additional scripts, ***'functions.py'*** and ***'satellites.py'***, provide raster processing functions and satellite mission periods, respectively. Both are sourced by 'main.py' and do not require any user changes.
+>In order to process snow lines in Google Earth Engine, users must adjust the processing variables in the ***'main.py'*** header. In particular, the Earth Engine service account and key must be set, as well as your cloud project name, in order to authenticate (see *Project setup* section). Further variables specify the survey period and target glaciers (see the beginning of 'main.py' for detailed variable descriptions).\
+>The additional scripts, ***'functions.py'*** and ***'satellites.py'***, provide raster processing functions and satellite mission periods, respectively. Both are sourced by 'main.py' and do not require any user changes.
 
 
 ### Snow line trend analysis
