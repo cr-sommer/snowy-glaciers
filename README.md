@@ -15,10 +15,10 @@ The following datasets are used for SLA processing:
 * Surface elevations of DEM: NASADEM (NASA JPL 2020)[^5]
 * Glacier surface elevation change (DHDT): DEM-differencing maps of mean elevation change per year (Hugonnet et al. 2021)[^6]
 
-All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. To process glaciers, users must provide glacier IDs in the format RGI2000-v7.0-G-99-99999 (see "rgi_id" attribute of RGI version 7.0). 
+All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. To process glaciers, users must provide glacier IDs in the format ***RGI2000-v7.0-G-99-99999*** (see "rgi_id" attribute of RGI version 7.0).
 
-[!WARNING]
-Please note that selecting glaciers that are far apart can drastically increase the processing time. Similarly, you should avoid selecting glaciers from different regions during the same processing session. If you are interested in single glaciers that are far apart, it may be more efficient to process each glacier individually.
+>[!WARNING]
+> Please note that selecting glaciers that are far apart can drastically increase the processing time. Similarly, you should avoid selecting glaciers from different regions during the same processing session. If you are interested in single glaciers that are far apart, it may be more efficient to process each glacier individually.
 
 ### Snow line processing
 ...
