@@ -41,7 +41,7 @@ All of the processing routines for the Earth Engine SLA are combined in the ***'
 >
 >The additional scripts, ***'functions.py'*** and ***'satellites.py'***, provide raster processing functions and satellite mission periods, respectively. Both are sourced by 'main.py' and do not require any user changes.
 >
-><img src="https://github.com/cr-sommer/snowy-glaciers/blob/main/figures/script_manual.png" width="768">
+><img src="https://github.com/cr-sommer/snowy-glaciers/blob/main/figures/script_manual.png" width="864">
 
 
 ### Snow line trend analysis
