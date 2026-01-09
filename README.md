@@ -9,13 +9,16 @@ The main workflow is based on the Google Earth Engine Python API. Running the co
 Results are exported to a Google Cloud Storage bucket: [Cloud-Storage](https://cloud.google.com/storage)
 
 ### Input data
-SLA processing is based on the following datasets:
+The following datasets are used for SLA processing:
 * Glacier areas from global inventory: Randolph Glacier Inventory 7.0 (RGI Consortium 2023)[^2]
 * Surface reflectance products of optical satellite missions: Landsat 4-9 (USGS)[^3], Sentinel-2 (ESA)[^4]
 * Surface elevations of DEM: NASADEM (NASA JPL 2020)[^5]
 * Glacier surface elevation change (DHDT): DEM-differencing maps of mean elevation change per year (Hugonnet et al. 2021)[^6]
 
-All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. Users can select glaciers to be processed by providing RGI-IDs.
+All input remote sensing datasets are accessed directly via the Earth Engine Data Catalogue. To process glaciers, users must provide glacier IDs in the format RGI2000-v7.0-G-99-99999 (see "rgi_id" attribute of RGI version 7.0). 
+
+[!WARNING]
+Please note that selecting glaciers that are far apart can drastically increase the processing time. Similarly, you should avoid selecting glaciers from different regions during the same processing session. If you are interested in single glaciers that are far apart, it may be more efficient to process each glacier individually.
 
 ### Snow line processing
 ...
