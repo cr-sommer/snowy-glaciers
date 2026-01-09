@@ -36,16 +36,16 @@ The retrieval of glacier snow lines features the following main functions:
 * Optional - Export of raster snow masks (one multi-band Geotiff per glacier)
 
 ### Run script
-All of the processing routines for the Earth Engine SLA are combined in the ***'main.py'***, ***'functions.py'*** and ***'satellites.py'*** files.
+All of the processing routines for the Earth Engine SLA are combined in the ***'main_gee_rgi_snow_lines.py'***, ***'functions.py'*** and ***'satellites.py'*** files.
 
 >[!Note]
->*In order to process snow lines in Google Earth Engine, users must adjust the processing variables in the ***'main.py'*** header. In particular, the Earth Engine service account and key must be set, as well as your cloud project name, in order to authenticate (see *Project setup* section). Further variables specify the survey period and target glaciers (see Figure 2).*
+>*In order to process snow lines in Google Earth Engine, users must adjust the processing variables in the ***'main_gee_rgi_snow_lines.py'*** header. In particular, the Earth Engine service account and key must be set, as well as your cloud project name, in order to authenticate (see *Project setup* section). Further variables specify the survey period and target glaciers (see Figure 2).*
 >
 >*The additional scripts, ***'functions.py'*** and ***'satellites.py'***, provide raster processing functions and satellite mission periods, respectively. Both are sourced by 'main.py' and do not require any user changes.*
 >
 ><img src="https://github.com/cr-sommer/snowy-glaciers/blob/main/figures/script_manual.png" width="864">
 >
->**Figure 2:** Snow line processing variables
+>**Figure 2:** Snow line processing variables in *'main_gee_rgi_snow_lines.py*
 
 
 ## Snow line trend analysis
