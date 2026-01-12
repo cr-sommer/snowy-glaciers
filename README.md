@@ -65,6 +65,8 @@ Additional analysis tools for the estimation of *End-of-Summer-Snow Line Altitud
 2. Compute entire survey period mean EoS-SLA, trend and trend significance for every glacier: ***'essd_alps_glacier-specific_sla_stats.R'*** (creates an updated RGI7.0 table that includes four additional columns with EoS-SLA information)
 3. Compute RGI region-wide mean EoS-SLA and trend: ***'essd_alps_glacier-specific_sla_analysis.R'***
 
+### Snow line visualization
+Production code of figures in ADD-PREPRINT-DOI can be found in ***'snow_line_visualization'***.
 
 
 [^1]: Otsu, N. (1979): A Threshold Selection Method from Gray-Level Histograms, IEEE Trans. Syst., Man, Cybern., 9, 62–66, https://doi.org/10.1109/TSMC.1979.4310076.
