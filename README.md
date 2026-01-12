@@ -21,7 +21,7 @@ All input remote sensing datasets are accessed directly via the Earth Engine Dat
 >[!WARNING]
 >*Please note that selecting glaciers that are far apart can drastically increase the processing time. Similarly, you should avoid selecting glaciers from different regions during the same processing session. If you are interested in single glaciers that are far apart, it may be more efficient to process each glacier individually.*
 
-## Snow line processing
+## Main: Snow line processing
 The retrieval of glacier snow lines features the following main functions:
 * Selection of satellite images (Landsat[^3] & Sentinel-2[^4]) acquired within supplied survey period and saturation filter
 * Creation of daily mosaics of images acquired by the same sensor to avoid fragmentation of glacier areas
@@ -48,7 +48,11 @@ All of the processing routines for the Earth Engine SLA are combined in the ***'
 >**Figure 2:** Snow line processing variables in *'main_gee_rgi_snow_lines.py'*
 
 
-## Snow line trend analysis
+## Postprocessing analysis tools
+### Snow line to shape
+...
+
+### Snow line trends
 Additional analysis tools for the estimation of *End-of-Summer-Snow Line Altitudes* (**EoS-SLA**) are included in the directory ***'snow_line_trend_analysis'***. Each routine is based on the csv-tables produced by ***'main_gee_rgi_snow_lines.py'***.
 
 1. Compute EoS-SLA for every glacier and year: ***'essd_alps_glacier-specific_eos_sla.R'***
