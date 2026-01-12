@@ -1,8 +1,8 @@
-### Header file >>> satellite data load and tsla estimate
-### glacier selection by RGI-IDs
+### Header file >>> LOAD SATELLITE DATA AND ESTIMATE SNOW LINE ALTITUDE PER GLACIER
+### glacier selection by Randolph Glacier Inventory (RGI) rgi_id attributes (! Version 7.0 ! https://www.glims.org/RGI/)
+### Christian Sommer (chris.sommer@fau.de)
 
-
-# USER INPUT REQUIRED:
+### CAUTION >>> USER INPUT REQUIRED:
 # L.35: project_id -> Name of USER cloud project (https://developers.google.com/earth-engine/guides/access?hl=de)
 # L.36: service_account -> Name of USER service account (https://developers.google.com/earth-engine/guides/service_account?hl=de)
 # L.37: key_path -> local path to USER json-key
