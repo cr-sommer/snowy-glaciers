@@ -55,6 +55,13 @@ All of the processing routines for the Earth Engine SLA are combined in the ***'
 
 
 ## Postprocessing analysis tools
+### Snow line filtering
+By default, SLA estimates from all satellite image footprints that overlap a specific glacier area are exported. However, this may include unreliable observations, for example from satellite images with very low spatial coverage of the glacier area. It is therefore advisable to filter the output produced by ***'main.py'*** using the ***'filter.py'*** script. The following parameters are used to assess the accuracy of the retrieved SLAs and to assign a confidence level to each measurement:
+* Relative global coverage of glacier: Fraction of total glacier area covered by satellite image (%)
+* Total area covered of (a) glacier and (b) "snow class": Area covered / number of valid pixels in satellite image resolution (km²)
+* Statistical spread of brightness values across glacier: Standard deviation of infrared reflectance (reflectance units)
+* Plausibility of class separation: Threshold value selected for infrared reflectance (reflectance units) and Bhataccharya Distance
+
 ### Snow line to shape
 ...
 
