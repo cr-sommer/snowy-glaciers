@@ -51,7 +51,7 @@ All of the processing routines for the Earth Engine SLA are combined in the ***'
 >
 ><img src="https://github.com/cr-sommer/snowy-glaciers/blob/main/figures/script_manual.png" width="864">
 >
->**Figure 2:** Snow line processing variables in *'main_gee_rgi_snow_lines.py'*
+>**Figure 2:** Snow line processing variables in *'main_gee_rgi-id_tsla_proc.py'*
 
 
 ## Postprocessing analysis tools
