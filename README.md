@@ -7,6 +7,8 @@ Glacier SLA time series are created in Google Earth Engine (Python API). The def
 
 As an additional option, the estimated snow-covered area can be exported as a <ins>multi-band raster mask (GeoTIFF)</ins> for each glacier and image acquisition date. These snow cover maps can either be used directly to clip the corresponding glacier geometry, or converted to a vector format if a line shapefile is required. 
 
+<img src="https://github.com/cr-sommer/snowy-glaciers/blob/main/figures/aletsch_snow_lines.png" width="764">
+**Figure 1:** Snow lines at Grosser Aletsch (Swiss Alps) between 2022-04-01 and 2022-11-01. (Background: ESA Sentinel-2 B03 2022-07-13).
 
 Time series results of SLAs of most glaciers of the European Alps (ADD-PREPRINT-DOI) can be found here: 10.5281/zenodo.18223929
 
