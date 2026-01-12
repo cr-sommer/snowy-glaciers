@@ -1,4 +1,9 @@
-### THIS SCRIPT PROVIDES START/END OF SATELLITE MISSIONS
+### SATELLITE MISSION LIBRARY of main_gee_rgi-id_tsla_proc.py
+### Christian Sommer (chris.sommer@fau.de)
+
+
+### CAUTION >>> No changes below
+
 
 from datetime import datetime
 
