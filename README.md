@@ -49,7 +49,12 @@ All of the processing routines for the Earth Engine SLA are combined in the ***'
 
 
 ## Snow line trend analysis
-Additional analysis tools for the estimation of *End-of-Summer-Snow Line Altitudes* (**EoS-SLA**) are included in the directory ***'snow_line_trend_analysis'***.
+Additional analysis tools for the estimation of *End-of-Summer-Snow Line Altitudes* (**EoS-SLA**) are included in the directory ***'snow_line_trend_analysis'***. Each routine is based on the csv-tables produced by ***'main_gee_rgi_snow_lines.py'***.
+
+1. Compute EoS-SLA for every glacier and year: ***'essd_alps_glacier-specific_eos_sla.R'***
+2. Compute entire survey period mean EoS-SLA, trend and trend significance for every glacier: ***'essd_alps_glacier-specific_sla_stats.R'*** (creates an updated RGI7.0 table that includes four additional columns with EoS-SLA information)
+3. Compute RGI region-wide mean EoS-SLA and trend: ***'essd_alps_glacier-specific_sla_analysis.R'***
+
 
 
 [^1]: Otsu, N. (1979): A Threshold Selection Method from Gray-Level Histograms, IEEE Trans. Syst., Man, Cybern., 9, 62–66, https://doi.org/10.1109/TSMC.1979.4310076.
