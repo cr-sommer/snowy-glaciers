@@ -1,9 +1,15 @@
-### TSLA FUNCTIONS LIBRARY
+### TSLA FUNCTIONS LIBRARY of main_gee_rgi-id_tsla_proc.py
+### Christian Sommer (chris.sommer@fau.de)
+
 # SENTINEL-2 FUNCTIONS SECTION: sensor-specific functions [Sentinel-2]
 # LANDSAT FUNCTIONS SECTION: sensor-specific functions [Landsat-4-9]
 # MAIN FUNCTIONS SECTION: general functions which are shared by different collections
 # THRESHOLD FUNCTIONS SECTION: functions for image thresholding and TSLA selection
 # EXPORT FUNCTIONS SECTION: data export functions
+
+
+### CAUTION >>> No changes below
+
 
 import ee
 
