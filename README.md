@@ -1,5 +1,5 @@
 # snowy-glaciers
-*SNOWY-GLACIERS* provides analysis code to retrieve time series of the *snow line altitude* (**SLA**) on glaciers. SLAs are measured using the surface reflectance of snow and ice in the infrared and visible spectra, based on medium-resolution optical remote sensing data. Automatic glacier surface classification is performed using image segmentation and Otsu's method[^1]. The elevation of the surface at the transition between bare ice and snow (i.e. the SLA) is estimated using a digital elevation model (DEM), to which a temporal correction is applied to account for changes in glacier elevation due to surface melt. A detailed overview of the applied methodology and SLA results of glaciers in the European Alps is presented here: ADD-PREPRINT-DOI
+*SNOWY-GLACIERS* provides analysis code to retrieve time series of the *Snow Line Altitude* (**SLA**) on glaciers. SLAs are measured using the surface reflectance of snow and ice in the infrared and visible spectra, based on medium-resolution optical remote sensing data. Automatic glacier surface classification is performed using image segmentation and Otsu's method[^1]. The elevation of the surface at the transition between bare ice and snow (i.e. the SLA) is estimated using a digital elevation model (DEM), to which a temporal correction is applied to account for changes in glacier elevation due to surface melt. A detailed overview of the applied methodology and SLA results of glaciers in the European Alps is presented here: ADD-PREPRINT-DOI
 
 ### Output
 Glacier SLA time series are created in Google Earth Engine (Python API). The default Earth Engine output is one numeric SLA value for each glacier and date of image acquisition. Additionally, SLA quality statistics (e.g. spatial coverage of the satellite image, threshold values and reflectance class statistics) are appended to each SLA value. All numerical results are exported as one CSV table per glacier.\
@@ -49,7 +49,7 @@ All of the processing routines for the Earth Engine SLA are combined in the ***'
 
 
 ## Snow line trend analysis
-...
+Additional analysis tools for the estimation of *End-of-Summer-Snow Line Altitudes* (**EoS-SLA**) are included in the directory 'snow_line_trend_analysis'.
 ...
 
 
