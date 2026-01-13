@@ -8,7 +8,8 @@ Glacier SLA time series are created in ***Google Earth Engine (Python API)***. T
 As an additional option, the estimated snow-covered area can be exported as a <ins>multi-band raster mask (GeoTIFF)</ins> for each glacier and image acquisition date. These snow cover maps can either be used directly to clip the corresponding glacier geometry, or converted to a vector format if a polygon or line shapefile is required. 
 
 
-Time series results of SLAs of most glaciers of the European Alps (ADD-PREPRINT-DOI) can be found here: 10.5281/zenodo.18223929
+> [!IMPORTANT]
+> SLA time series of glaciers in the European Alps can be found here: [Zenodo](https://doi.org/10.5281/zenodo.18223929)
 
 
 <p align="center">
