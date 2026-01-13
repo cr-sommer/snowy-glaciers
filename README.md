@@ -9,7 +9,7 @@ As an additional option, the estimated snow-covered area can be exported as a <i
 
 
 > [!IMPORTANT]
-> *SLA time series of glaciers in the European Alps can be found here:* [Zenodo](https://doi.org/10.5281/zenodo.18223929)
+> *SLA time series of glaciers in the European Alps can be found here:* [DATASET](https://doi.org/10.5281/zenodo.18223929)
 
 
 <p align="center">
