@@ -64,14 +64,14 @@ The retrieval of glacier snow lines features the following main functions:
 
 ## Postprocessing analysis tools
 ### Snow line filtering
-By default, SLA estimates from all satellite image footprints that overlap a specific glacier area are exported. However, this may include unreliable observations, for example from satellite images with very low spatial coverage of the glacier area. It is therefore advisable to filter the output produced by ***'main_gee_rgi-id_tsla_proc.py'*** using the ***'filter.py'*** script. The following parameters are used to assess the accuracy of the retrieved SLAs and to assign a confidence level to each measurement:
+By default, SLA estimates from all satellite image footprints that overlap a specific glacier area are exported. However, this may include unreliable observations, for example from satellite images with very low spatial coverage of the glacier area. It is therefore advisable to filter the output produced by ***'main_gee_rgi-id_tsla_proc.py'*** using ***'snow_line_filter'*** routines. The following parameters are used to assess the accuracy of the retrieved SLAs and to assign a confidence level to each measurement:
 * Relative global coverage of glacier: Fraction of total glacier area covered by satellite image (%)
 * Total area covered of (a) glacier and (b) "snow class": Area covered / number of valid pixels in satellite image resolution (km²)
 * Statistical spread of brightness values across glacier: Standard deviation of infrared reflectance (reflectance units)
 * Plausibility of class separation: Threshold value selected for infrared reflectance (reflectance units) and Bhataccharya Distance
 
 ### Snow line to shape
-Currently, Google Earth Engine does not support the export of vector-format line features. If user applications require information on the extent of snow cover, raster-format snow cover masks can either be exported directly by ***'main_gee_rgi-id_tsla_proc.py'*** or created subsequently from the SLA values of the CSV output tables. ***'Snow_line_to_shape'*** provides data formatting tools to convert raster snow masks exported from Earth Engine to vector masks (polygon and line features).    
+Currently, Google Earth Engine does not support the export of vector-format line features. If user applications require information on the extent of snow cover, raster-format snow cover masks can either be exported directly by ***'main_gee_rgi-id_tsla_proc.py'*** or created subsequently from the SLA values of the CSV output tables. ***'snow_line_to_shape'*** provides data formatting tools to convert raster snow masks exported from Earth Engine to vector masks (polygon and line features).    
 
 ### Snow line trends
 Additional analysis tools for the estimation of *End-of-Summer-Snow Line Altitudes* (**EoS-SLA**) are included in the directory ***'snow_line_trend_analysis'***. Each routine is based on the csv-tables produced by ***'main_gee_rgi-id_tsla_proc.py'***.
