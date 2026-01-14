@@ -13,7 +13,7 @@ library(terra)
 
 
 ## working directory is input data path
-wd <- paste0("/home/qo78vomo/storage/ee_snow_lines/output_01/RGI2000-v7.0-G-11_central_europe/11-01_geometries")
+wd <- paste0("INSERT-YOUR-DATA-PATH")
 
 ## forced snow line filters
 obs_min_date <- "04-01" # minimum date filter (format "MM-DD"), leave empty "" or set input
@@ -30,9 +30,6 @@ flag_nsir_bd <- 0.2 # minimum reliable interclass separability
 
 ## create output preview figures
 plot_preview <- 1
-
-## glacier inventory of processing region (only required if plot_preview = 1)
-rgi_inv <- "/home/qo78vomo/storage/ee_snow_lines/inventory/RGI2000-v7.0-G-11_central_europe/RGI2000-v7.0-G-11_central_europe.shp"
 
 
 
