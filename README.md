@@ -63,8 +63,8 @@ The retrieval of glacier snow lines features the following main functions:
 
 
 ## Postprocessing analysis tools
-### Snow line filtering
-By default, SLA estimates from all satellite image footprints that overlap a specific glacier area are exported. However, this may include unreliable observations, for example from satellite images with very low spatial coverage of the glacier area. It is therefore advisable to filter the output produced by ***'main_gee_rgi-id_tsla_proc.py'*** using ***'snow_line_filter'*** routines. The following parameters are used to assess the accuracy of the retrieved SLAs and to assign a confidence level to each measurement:
+### Snow line export filter
+By default, SLA estimates from all satellite image footprints that overlap a specific glacier area are exported. However, this may include unreliable observations, for example from satellite images with very low spatial coverage of the glacier area. It is therefore advisable to filter the output produced by ***'main_gee_rgi-id_tsla_proc.py'*** using ***'snow_line_export_filter'*** routines. The following parameters are used to assess the accuracy of the retrieved SLAs and to assign a confidence level to each measurement:
 * Relative global coverage of glacier: Fraction of total glacier area covered by satellite image (%)
 * Total area covered of (a) glacier and (b) "snow class": Area covered / number of valid pixels in satellite image resolution (km²)
 * Statistical spread of brightness values across glacier: Standard deviation of infrared reflectance (reflectance units)
