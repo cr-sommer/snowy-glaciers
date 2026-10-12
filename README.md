@@ -1,5 +1,6 @@
 # snowy-glaciers
-*SNOWY-GLACIERS* provides analysis code to retrieve time series of the *Snow Line Altitude* (**SLA**) on glaciers. SLAs are measured using the surface reflectance of snow and ice in the infrared and visible spectra, based on medium-resolution optical remote sensing data. Automatic glacier surface classification is performed using image segmentation and Otsu's method[^1]. The elevation of the surface at the transition between bare ice and snow (i.e. the SLA) is estimated using a digital elevation model (DEM), to which a temporal correction is applied to account for changes in glacier elevation due to surface melt. A detailed overview of the applied methodology and SLA results of glaciers in the European Alps is presented here: ADD-PREPRINT-DOI
+*SNOWY-GLACIERS* provides analysis code to retrieve time series of the *Snow Line Altitude* (**SLA**) on glaciers. SLAs are measured using the surface reflectance of snow and ice in the infrared and visible spectra, based on medium-resolution optical remote sensing data. Automatic glacier surface classification is performed using image segmentation and Otsu's method[^1]. The elevation of the surface at the transition between bare ice and snow (i.e. the SLA) is estimated using a digital elevation model (DEM), to which a temporal correction is applied to account for changes in glacier elevation due to surface melt. A detailed overview of the applied methodology and SLA results of glaciers in the European Alps is presented here: 
+https://doi.org/10.5194/essd-2026-35
 
 ### Output
 Glacier SLA time series are created in ***Google Earth Engine (Python API)***. The default Earth Engine output is one numeric SLA value for each glacier and date of image acquisition. Additionally, SLA quality statistics (e.g. spatial coverage of the satellite image, threshold values and reflectance class statistics) are appended to each SLA value. All numerical results are exported as <ins>one CSV-table per glacier</ins>.
@@ -22,6 +23,8 @@ As an additional option, the estimated snow-covered area can be exported as a <i
 ## Project setup
 The main workflow is based on the Google Earth Engine Python API. Running the code requires an Earth Engine service accout and cloud project. Detailed information on the initialization and authorization of Earth Engine and required python packages can be found here: [python-api](https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api); [Authentication](https://developers.google.com/earth-engine/guides/auth); [Service-Accounts](https://developers.google.com/earth-engine/guides/service_account)\
 Results are exported to a Google Cloud Storage bucket: [Cloud-Storage](https://cloud.google.com/storage)
+> [!IMPORTANT]
+> Please note that you need an active billing account to register a Google Cloud project and apply for certain non-commercial Earth Engine subscriptions. Detailed information on the current usage terms can be found [here](https://docs.cloud.google.com/billing/docs/how-to/manage-billing-account) and [here](https://developers.google.com/earth-engine/guides/noncommercial_tiers#noncommercial_tiers).
 
 ## Input data
 The following datasets are used for SLA processing:
