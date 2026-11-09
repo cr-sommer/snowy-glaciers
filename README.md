@@ -21,10 +21,13 @@ As an additional option, the estimated snow-covered area can be exported as a <i
 
 
 ## Project setup
-The main workflow is based on the Google Earth Engine Python API. Running the code requires an Earth Engine service accout and cloud project. Detailed information on the initialization and authorization of Earth Engine and required python packages can be found here: [python-api](https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api); [Authentication](https://developers.google.com/earth-engine/guides/auth); [Service-Accounts](https://developers.google.com/earth-engine/guides/service_account)\
+The main workflow is based on the Google Earth Engine Python API. Running the code requires an Earth Engine service account and cloud project. Detailed information on the initialization and authorization of Earth Engine and required python packages can be found here: [python-api](https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api); [Authentication](https://developers.google.com/earth-engine/guides/auth); [Service-Accounts](https://developers.google.com/earth-engine/guides/service_account)\
 Results are exported to a Google Cloud Storage bucket: [Cloud-Storage](https://cloud.google.com/storage)
 > [!IMPORTANT]
 > Please note that you need an active billing account to register a Google Cloud project and apply for certain non-commercial Earth Engine subscriptions. Detailed information on the current usage terms can be found [here](https://docs.cloud.google.com/billing/docs/how-to/manage-billing-account) and [here](https://developers.google.com/earth-engine/guides/noncommercial_tiers#noncommercial_tiers).
+Data exported from Google Earth Engine was analyzed using R. The Python and R versions are documented below and in the requirements.txt / renv.lock files:
+* Python Version 3.12.3 (Earth Engine Python API 1.4.3rc0)
+* R Version 4.3.3
 
 ## Input data
 The following datasets are used for SLA processing:
