@@ -25,7 +25,8 @@ The main workflow is based on the Google Earth Engine Python API. Running the co
 Results are exported to a Google Cloud Storage bucket: [Cloud-Storage](https://cloud.google.com/storage)
 > [!IMPORTANT]
 > Please note that you need an active billing account to register a Google Cloud project and apply for certain non-commercial Earth Engine subscriptions. Detailed information on the current usage terms can be found [here](https://docs.cloud.google.com/billing/docs/how-to/manage-billing-account) and [here](https://developers.google.com/earth-engine/guides/noncommercial_tiers#noncommercial_tiers).
-Data exported from Google Earth Engine was analyzed using R. The Python and R versions are documented below and in the requirements.txt / renv.lock files:
+
+The data exported from Google Earth Engine was analysed using R. The Python and R versions are documented below and in the requirements.txt / renv.lock files:
 * Python Version 3.12.3 (Earth Engine Python API 1.4.3rc0)
 * R Version 4.3.3
 
